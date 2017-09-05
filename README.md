@@ -19,3 +19,13 @@ docker run --rm \
 | SONAR_SOURCE_ENCODING | UTF-8 | 
 | SONAR_HOST | http://localhost:9000 | 
 | SONAR_SCANNER_OPTS | -Xms512m |
+
+# Avaiable Config
+
+| Config | Description |
+|-------------------|-----------|
+| SONAR_PROJECT_BASEDIR | Use this property when you need analysis to take place in a directory other than the one from which it starts. | 
+| SONAR_LANGUAGE | if not set, multi-language analysis will be used. |
+
+details here.
+https://docs.sonarqube.org/display/SONAR/Analysis+Parameters
