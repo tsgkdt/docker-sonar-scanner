@@ -21,7 +21,7 @@ RUN apk add --no-cache wget && \
     sed -i 's/use_embedded_jre=true/use_embedded_jre=false/g' /opt/sonar-scanner/bin/sonar-scanner && \
     cd /usr/bin && \
     ln -s /opt/sonar-scanner/bin/sonar-scanner sonar-scanner && \
-    rm -f /opt/asonar-scanner-cli-${SONAR_SCANNER_VERSION}-linux.zip && \
+    rm -f /opt/sonar-scanner-cli-${SONAR_SCANNER_VERSION}-linux.zip && \
     chmod +x /opt/run.sh && \
     apk del wget
 
